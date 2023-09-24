@@ -1,0 +1,9 @@
+extends layout 
+
+block content
+    each post in posts 
+        a(href=post.url) #[h2.title= post.data.title]
+        p= post.data.description
+        p #[em= post.data.author + ' // ' + post.data.date]
+        hr
+    p You've reached the end. Be sure to check back later, there might be more stuff!
