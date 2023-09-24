@@ -17,6 +17,10 @@ h3 {
 .title {
     line-height: 1;
 }
+pre {
+    border: 1px solid #c9d1d9;
+    border-radius: 2px;
+}
 footer {
     text-align: center;
 }

@@ -9,7 +9,7 @@ description: This is just a test blog post to see how it will look on my website
 
 ...and yet I'm building my blog instead ¯\\\_(ツ)_/¯
 
-```js
+```javascript
 // This is some code 
 const greeting = 'hello';
 console.log(greeting);

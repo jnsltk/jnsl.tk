@@ -15,6 +15,10 @@ app.use('/blog', blogRouter);
 
 app.use(express.static(__dirname + '/public'));
 
+app.use((req, res, next) => {
+    res.render('404', { title: 'jnsl.tk | 404' });
+})
+
 app.listen(port, function() {
     console.log('Server is running on port ' + port);
 });
