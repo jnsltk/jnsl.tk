@@ -3,6 +3,18 @@ html(lang='en')
     head 
         title= title
         link(rel='stylesheet', href='/css/style.css')
+        meta(charset="UTF-8")
         meta(name="viewport" content="width=device-width, initial-scale=1")
     body 
-        block content
+        header
+            h1= title 
+            nav 
+                a(href="/") HOME
+                |  // 
+                a(href="/blog") BLOG
+            hr
+        main
+            block content
+        footer 
+            hr
+            p Copyright 2023 Janos Litkei
