@@ -10,6 +10,9 @@ const port = process.env.PORT || 3000;
 const homeRouter = require('./routes/home.js');
 app.use('/', homeRouter);
 
+const aboutRouter = require('./routes/about.js');
+app.use('/about', aboutRouter);
+
 const blogRouter = require('./routes/blog.js');
 app.use('/blog', blogRouter);
 

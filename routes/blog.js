@@ -26,7 +26,6 @@ router.get('/', function(req, res, next) {
         postData.push({ url: url, data: markdown.data });
 
     });
-    console.log(postData);
     res.render('blog', {title: 'jnsl.tk | blog', posts: postData });
 });
 
@@ -36,7 +35,6 @@ router.get('/:filename', function(req, res, next) {
     try {
         const post = matter.read(markdown);
         const content = marked.parse(post.content);
-        console.log(post);
         res.render('blogPost', { title: 'jnsl.tk | blog', postTitle: post.data.title, postAuthor: post.data.author, postDate: post.data.date, postContent: content });
 
     } catch (err) {
