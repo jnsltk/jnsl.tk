@@ -35,7 +35,7 @@ router.get('/:filename', function(req, res, next) {
     try {
         const post = matter.read(markdown);
         const content = marked.parse(post.content);
-        res.render('blogPost', { title: 'jnsl.tk | blog', postTitle: post.data.title, postAuthor: post.data.author, postDate: post.data.date, postContent: content });
+        res.render('blogPost', { title: 'jnsl.tk | blog', postTitle: post.data.title, postAuthor: post.data.author, postDate: post.data.date, postDesc: post.data.description, postContent: content });
 
     } catch (err) {
         console.log(err);
