@@ -5,7 +5,7 @@ const app = express();
 app.set('views', path.join(__dirname, '/views'));
 app.set('view engine', 'pug');
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 8080;
 
 const homeRouter = require('./routes/home.js');
 app.use('/', homeRouter);
