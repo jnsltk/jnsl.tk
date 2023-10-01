@@ -42,7 +42,7 @@ markdown file, and the website should convert them to html and serve them. Simpl
 But doing this requires some kind of backend, so my site cannot be as simple as 
 a few html and css files. 
 
-## Node, express and ejs
+## Node, express and pug
 
 So this is what I've come up with.
 
