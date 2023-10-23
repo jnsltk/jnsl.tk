@@ -13,17 +13,15 @@ html(lang='en')
         link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css")
     body 
         header
-            h1= title 
+            h1.site-title= title 
             nav 
                 h3
-                    a(href="/") HOME
+                    a(href="/") Home
                     |  // 
-                    a(href="/about") ABOUT ME
-                    |  // 
-                    a(href="/blog") BLOG
+                    a(href="/blog") Blog
             hr
         main
             block content
         footer 
             hr
-            p Copyright 2023 Janos Litkei
+            p #[em Built using Free and Open Source Software]

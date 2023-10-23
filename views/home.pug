@@ -1,12 +1,36 @@
 extends layout 
 
 block content 
-    h2 Hello!
     p Welcome to my blog.
-    p My name is János Litkei, and I am a Hungarian Software Engineering student studying in Gothenburg, Sweden. You can find out a bit more about me at #[a(href='/about') ABOUT ME].
+    h1 $ whoami
+    a(href="/pictures/jan.png") #[img(src="/pictures/jan.png" width="200px")]
+    p I'm János Litkei and I live in Gothenburg, Sweden. I'm a Software Engineering Student from Hungary studying at a joint programme between Chalmers University of Technology and the University of Gothenburg. I'm passionate about solving problems and building things.
     p To see some of my projects and the things I've been working on you can visit my portfolio at #[a(href='https://janoslitkei.com' target="_blank") janoslitkei.com]. 
-    p This website is a bit more personal, and it's mainly a blog, built in the spirit of sites like #[a(href='https://motherfuckingwebsite.com/' target="_blank") this] and #[a(href='https://perfectmotherfuckingwebsite.com/' target="_blank") this].
-    h2 Enjoy reading!
-    p I hope you can gain something useful from my posts. If you have any questions, #[a(href="mailto:janos.litkei@gmail.com") drop me an email]! 
+    h2 Contact
+    ul
+        li #[a(href="mailto:janos.litkei@gmail.com") Email]
+        li #[a(href="https://github.com/jnsltk" target="_blank") Github]
+    h2 Skills
+    ul
+        li #[strong Languages:] Java, JavaScript, (some) Python
+        li #[strong Frameworks:] Svelte, Vue, Tailwind 
+        li #[strong Others:] Git, Docker, NodeJS, Linux, SQL, mongo
+    h2 Fun facts
+    ul
+        li I'm fluent in English, Hungarian and Mandarin Chinese
+        li I have a Bachelor's degree in Chinese Language and Culture
+        li I love analogue photography
+        li I love hiking, and taking long walks in nature
+        li I'm not on social media
+    h2 Tools
+    ul
+        li #[strong Computer:] ThinkPad T440
+        li #[strong OS:] Arch Linux
+        li #[strong Editor:] Vim (neovim) 
+        li #[a(href="https://github.com/jnsltk/.dotfiles" target="_blank") My dotfiles]
+    h2 Inspirations for this site
+    ul
+        li Sites like #[a(href="https://motherfuckingwebsite.com/" target="_blank") this] and #[a(href="https://perfectmotherfuckingwebsite.com/" target="_blank") this].
+        li #[a(href="https://blog.staque.xyz/" target="_blank") This Taiwanese blog] for its typography.
+        li #[a(href="https://medium.com/@greennolgaa/how-to-build-a-markdown-blog-using-node-js-e4ab46bcab18" target="_blank") This Medium post].
     br
-
